@@ -2,26 +2,97 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --bg: #FAF7F2;
+    --bg-surface: #F0EBE3;
+    --text: #2C2620;
+    --text-muted: #7A6E66;
+    --accent: #8B6F47;
+    --border: #DDD5C8;
+  }
+
+  .dark {
+    --bg: #1C1916;
+    --bg-surface: #252018;
+    --text: #EDE8E0;
+    --text-muted: #9E9085;
+    --accent: #B08B60;
+    --border: #3A342C;
+  }
+
+  html {
+    background-color: var(--bg);
+    color: var(--text);
+  }
+
+  body {
+    @apply font-sans antialiased;
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background-color 0.2s, color 0.2s;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+@layer components {
+  .prose-session {
+    @apply font-serif;
+    font-size: 18px;
+    line-height: 1.85;
+    color: var(--text);
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  @media (max-width: 640px) {
+    .prose-session {
+      font-size: 17px;
+    }
+  }
+
+  .prose-session p {
+    margin-bottom: 1.25em;
+  }
+
+  .prose-session strong {
+    font-weight: 600;
+  }
+
+  .prose-session em {
+    font-style: italic;
+  }
+
+  .prose-session ul {
+    list-style: disc;
+    padding-left: 1.5em;
+    margin-bottom: 1.25em;
+  }
+
+  .prose-session ol {
+    list-style: decimal;
+    padding-left: 1.5em;
+    margin-bottom: 1.25em;
+  }
+
+  .prose-session li {
+    margin-bottom: 0.4em;
+  }
+
+  .prose-session blockquote {
+    border-left: 3px solid var(--accent);
+    padding-left: 1.25em;
+    margin: 1.5em 0;
+    color: var(--text-muted);
+    font-style: italic;
+  }
+
+  .prose-session a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .prose-session hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 2em 0;
   }
 }
