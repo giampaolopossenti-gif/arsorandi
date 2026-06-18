@@ -127,6 +127,26 @@ function parseSession(block: string, weekNumber: number): Session | null {
 
   const soglia = parseSoglia(labeled["Soglia"] || "");
 
+  // If no labeled sections found, treat entire body as orientamento (free-form sessions)
+  const hasLabels = Object.keys(labeled).length > 0;
+  if (!hasLabels) {
+    const body = afterTitle.trim();
+    const { cleaned: bodyWithTimer, minutes: timerMinutes } = extractTimer(body);
+    const { cleaned: orientamento, hasAudio } = extractAudio(bodyWithTimer);
+    return {
+      id: `${weekNumber}-${sessionNumber}`,
+      weekNumber,
+      sessionNumber,
+      title,
+      soglia: { text: "", reference: "" },
+      orientamento: orientamento.trim(),
+      pratica: "",
+      timerMinutes,
+      chiusura: "",
+      hasAudio,
+    };
+  }
+
   const { cleaned: praticaWithAudio, hasAudio } = extractAudio(labeled["La pratica"] || "");
   const { cleaned: pratica, minutes: timerMinutes } = extractTimer(praticaWithAudio);
 
