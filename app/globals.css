@@ -10,6 +10,7 @@
     --text-muted: #7A6E66;
     --accent: #8B6F47;
     --border: #DDD5C8;
+    --font-size-body: 18px;
   }
 
   .dark {
@@ -19,6 +20,18 @@
     --text-muted: #9E9085;
     --accent: #B08B60;
     --border: #3A342C;
+    --font-size-body: 18px;
+  }
+
+  /* Modalità notturna: ancora più scura, ambra calda, font più grande */
+  .night {
+    --bg: #110F0D;
+    --bg-surface: #1A1612;
+    --text: #D4C9B8;
+    --text-muted: #7A6E60;
+    --accent: #C49A5A;
+    --border: #2A2318;
+    --font-size-body: 20px;
   }
 
   html {
@@ -37,28 +50,20 @@
 @layer components {
   .prose-session {
     @apply font-serif;
-    font-size: 18px;
+    font-size: var(--font-size-body);
     line-height: 1.85;
     color: var(--text);
   }
 
   @media (max-width: 640px) {
     .prose-session {
-      font-size: 17px;
+      font-size: calc(var(--font-size-body) - 1px);
     }
   }
 
-  .prose-session p {
-    margin-bottom: 1.25em;
-  }
-
-  .prose-session strong {
-    font-weight: 600;
-  }
-
-  .prose-session em {
-    font-style: italic;
-  }
+  .prose-session p { margin-bottom: 1.25em; }
+  .prose-session strong { font-weight: 600; }
+  .prose-session em { font-style: italic; }
 
   .prose-session ul {
     list-style: disc;
@@ -72,9 +77,7 @@
     margin-bottom: 1.25em;
   }
 
-  .prose-session li {
-    margin-bottom: 0.4em;
-  }
+  .prose-session li { margin-bottom: 0.4em; }
 
   .prose-session blockquote {
     border-left: 3px solid var(--accent);

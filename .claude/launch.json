@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "arsorandi",
+      "runtimeExecutable": "/Users/giampaolo/local/node-v22.16.0-darwin-x64/bin/npm",
+      "runtimeArgs": ["run", "dev"],
+      "port": 3000
+    }
+  ]
+}

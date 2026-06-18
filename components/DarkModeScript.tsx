@@ -1,6 +1,5 @@
 "use client";
 
-// Injected before paint to avoid flash of wrong theme
 export default function DarkModeScript() {
   return (
     <script
@@ -8,9 +7,10 @@ export default function DarkModeScript() {
         __html: `
           (function() {
             try {
-              var stored = localStorage.getItem('arsorandi-theme');
-              var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-              if (stored === 'dark' || (!stored && prefersDark)) {
+              var t = localStorage.getItem('arsorandi-theme');
+              if (t === 'dark') { document.documentElement.classList.add('dark'); }
+              else if (t === 'night') { document.documentElement.classList.add('night'); }
+              else if (!t && window.matchMedia('(prefers-color-scheme: dark)').matches) {
                 document.documentElement.classList.add('dark');
               }
             } catch(e) {}

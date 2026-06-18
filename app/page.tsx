@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { getAllWeeks } from "@/lib/content";
 import { WeekProgress } from "@/components/ProgressDot";
+import HomeResume from "@/components/HomeResume";
 
 export default function HomePage() {
   const weeks = getAllWeeks();
 
   return (
     <div>
-      <div className="mb-12">
+      <div className="mb-10">
         <h1 className="font-serif text-3xl sm:text-4xl font-medium mb-3" style={{ color: "var(--text)" }}>
           Arsorandi
         </h1>
@@ -15,6 +16,9 @@ export default function HomePage() {
           Un corso di preghiera in otto settimane, secondo il metodo di Pietro d&apos;Alcantara e la Lectio Divina.
         </p>
       </div>
+
+      {/* Riprendi / prossima sessione — client component */}
+      <HomeResume weeks={weeks} />
 
       <div className="flex flex-col gap-3">
         {weeks.map((week) => (
@@ -36,12 +40,8 @@ export default function HomePage() {
               <div className="flex items-center gap-2 shrink-0 pt-1">
                 <WeekProgress weekNumber={week.number} total={week.sessions.length} />
                 <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2}
+                  width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" strokeWidth={2}
                   style={{ color: "var(--border)" }}
                   className="group-hover:translate-x-0.5 transition-transform"
                 >

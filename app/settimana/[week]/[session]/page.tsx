@@ -5,6 +5,9 @@ import Breadcrumb from "@/components/Breadcrumb";
 import SessionContent from "@/components/SessionContent";
 import Timer from "@/components/Timer";
 import CompleteButton from "@/components/CompleteButton";
+import SessionNotes from "@/components/SessionNotes";
+import ShareButton from "@/components/ShareButton";
+import VisitTracker from "@/components/VisitTracker";
 
 export async function generateStaticParams() {
   return getAllWeeks().flatMap((w) =>
@@ -19,39 +22,33 @@ export default function SessionPage({ params }: { params: { week: string; sessio
   if (!session) notFound();
 
   const { prev, next } = getPrevNextSession(weekNumber, sessionNumber);
-
   const weekLabel = weekNumber === 0 ? "Introduzione" : `Settimana ${weekNumber}`;
 
   return (
     <div className="pb-24">
-      <Breadcrumb
-        crumbs={[
-          { label: "Home", href: "/" },
-          { label: weekLabel, href: `/settimana/${weekNumber}` },
-          { label: `Sessione ${sessionNumber}` },
-        ]}
-      />
+      <VisitTracker sessionId={session.id} />
+
+      <Breadcrumb crumbs={[
+        { label: "Home", href: "/" },
+        { label: weekLabel, href: `/settimana/${weekNumber}` },
+        { label: `Sessione ${sessionNumber}` },
+      ]} />
 
       {/* Soglia */}
       <div className="mb-12 text-center">
         <div
           className="font-serif text-xl sm:text-2xl italic leading-relaxed mb-3"
-          style={{ color: "var(--text)", maxWidth: "50ch", margin: "0 auto 0.75rem" }}
+          style={{ maxWidth: "50ch", margin: "0 auto 0.75rem", color: "var(--text)" }}
         >
           &ldquo;{session.soglia.text}&rdquo;
         </div>
-        <div
-          className="font-sans text-xs uppercase tracking-widest"
-          style={{ color: "var(--text-muted)" }}
-        >
+        <div className="font-sans text-xs uppercase tracking-widest mb-2" style={{ color: "var(--text-muted)" }}>
           {session.soglia.reference}
         </div>
+        <ShareButton text={session.soglia.text} reference={session.soglia.reference} />
       </div>
 
-      <div
-        className="border-t mb-12"
-        style={{ borderColor: "var(--border)" }}
-      />
+      <div className="border-t mb-12" style={{ borderColor: "var(--border)" }} />
 
       {/* Audio banner */}
       {session.hasAudio && (
@@ -65,10 +62,7 @@ export default function SessionPage({ params }: { params: { week: string; sessio
 
       {/* Orientamento */}
       <section className="mb-12">
-        <div
-          className="font-sans text-xs uppercase tracking-widest mb-6"
-          style={{ color: "var(--text-muted)" }}
-        >
+        <div className="font-sans text-xs uppercase tracking-widest mb-6" style={{ color: "var(--text-muted)" }}>
           Orientamento
         </div>
         <SessionContent markdown={session.orientamento} />
@@ -76,10 +70,7 @@ export default function SessionPage({ params }: { params: { week: string; sessio
 
       {/* La pratica */}
       <section className="mb-12">
-        <div
-          className="font-sans text-xs uppercase tracking-widest mb-6"
-          style={{ color: "var(--text-muted)" }}
-        >
+        <div className="font-sans text-xs uppercase tracking-widest mb-6" style={{ color: "var(--text-muted)" }}>
           La pratica
         </div>
         <SessionContent markdown={session.pratica} />
@@ -92,47 +83,34 @@ export default function SessionPage({ params }: { params: { week: string; sessio
 
       {/* Chiusura */}
       <section className="mb-14">
-        <div
-          className="font-sans text-xs uppercase tracking-widest mb-6"
-          style={{ color: "var(--text-muted)" }}
-        >
+        <div className="font-sans text-xs uppercase tracking-widest mb-6" style={{ color: "var(--text-muted)" }}>
           Chiusura
         </div>
         <SessionContent markdown={session.chiusura} />
       </section>
 
-      {/* Complete button */}
-      <div className="flex justify-center mb-14">
+      {/* Note personali */}
+      <SessionNotes sessionId={session.id} />
+
+      {/* Pulsante completamento */}
+      <div className="flex justify-center mt-10 mb-14">
         <CompleteButton sessionId={session.id} />
       </div>
 
-      {/* Prev / Next navigation */}
-      <div
-        className="border-t pt-8 flex justify-between gap-4"
-        style={{ borderColor: "var(--border)" }}
-      >
+      {/* Prev / Next */}
+      <div className="border-t pt-8 flex justify-between gap-4" style={{ borderColor: "var(--border)" }}>
         {prev ? (
-          <Link
-            href={`/settimana/${prev.weekNumber}/${prev.sessionNumber}`}
-            className="font-sans text-sm flex flex-col gap-0.5 max-w-[45%]"
-          >
-            <span style={{ color: "var(--text-muted)" }} className="text-xs">← Precedente</span>
+          <Link href={`/settimana/${prev.weekNumber}/${prev.sessionNumber}`} className="font-sans text-sm flex flex-col gap-0.5 max-w-[45%]">
+            <span className="text-xs" style={{ color: "var(--text-muted)" }}>← Precedente</span>
             <span style={{ color: "var(--text)" }}>{prev.title}</span>
           </Link>
-        ) : (
-          <span />
-        )}
+        ) : <span />}
         {next ? (
-          <Link
-            href={`/settimana/${next.weekNumber}/${next.sessionNumber}`}
-            className="font-sans text-sm flex flex-col gap-0.5 items-end max-w-[45%] text-right"
-          >
-            <span style={{ color: "var(--text-muted)" }} className="text-xs">Successiva →</span>
+          <Link href={`/settimana/${next.weekNumber}/${next.sessionNumber}`} className="font-sans text-sm flex flex-col gap-0.5 items-end max-w-[45%] text-right">
+            <span className="text-xs" style={{ color: "var(--text-muted)" }}>Successiva →</span>
             <span style={{ color: "var(--text)" }}>{next.title}</span>
           </Link>
-        ) : (
-          <span />
-        )}
+        ) : <span />}
       </div>
     </div>
   );
