@@ -9,9 +9,9 @@ Web app per il corso digitale di preghiera cristiana Arsorandi (arsorandi.org).
 - **Persistenza**: localStorage (niente backend, niente autenticazione)
 - **Font**: Lora (serif, testi sessione) + Inter (sans, UI) via `next/font/google`
 - **PWA**: @ducanh2912/next-pwa — service worker generato al build
-- **Node.js**: installato in `~/local/node-v22.16.0-darwin-x64/bin/` (non nel PATH di sistema)
+- **Node.js**: installato in `~/local/node-v22.16.0-darwin-x64/bin/`, aggiunto al PATH in `~/.bash_profile`
 
-Per eseguire qualsiasi comando Node/npm/npx/vercel, usa sempre:
+Se npm/node non fosse nel PATH, aggiungi all'inizio del comando:
 ```bash
 export PATH="$HOME/local/node-v22.16.0-darwin-x64/bin:$PATH"
 ```
@@ -21,8 +21,9 @@ export PATH="$HOME/local/node-v22.16.0-darwin-x64/bin:$PATH"
 - **GitHub**: https://github.com/giampaolopossenti-gif/arsorandi
 - **Vercel**: https://arsorandi.vercel.app (progetto: `arsorandi`, scope: `giampaolopossenti-gifs-projects`)
 - **Flusso**: modifica → `git push origin main` → Vercel ri-deploya automaticamente
-
-I token (GitHub PAT e Vercel token) non sono salvati nel codice. Chiedili all'utente quando servono per il push/deploy.
+- **Credenziali git**: salvate in `~/.git-credentials` (non chiedere il token)
+- **Vercel token**: salvato in `~/.config/vercel/auth.json` (non chiedere il token)
+- Per il deploy manuale: `npx vercel --prod --yes --scope giampaolopossenti-gifs-projects`
 
 ## Struttura del progetto
 
