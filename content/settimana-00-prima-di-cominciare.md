@@ -1,220 +1,110 @@
 # Settimana 0 — Prima di cominciare
 
----
+## Sessione 1 — Guardarsi pregare
 
-## Sessione 1 — Proviamo subito
+Benvenuto/benvenuta in questa strana app che cerca di introdurre al mondo della preghiera, pur sapendo che servirebbe sempre un accompagnamento personale e in presenza per crescere realmente nelle diverse dimensioni della fede. Ma così come è utile un libro per cominciare a conoscere aspetti inesplorati del Mistero cristiano, ritengo sia altrettanto utile uno strumento che accompagni giornalmente a fare piccole esperienze.
 
-**Soglia**
-*"Non sappiamo pregare come si deve."* (Rm 8,26)
+Domani ti introdurrò alla proposta di questo percorso. Oggi ti chiedo, invece, di guardare semplicemente cosa accade di solito quando decidi di pregare. Questa prima sessione non ha un testo da leggere né una tecnica da imparare. Ha solo una domanda: *come preghi, adesso?*
 
----
+Non è una domanda retorica. È utile cercare la risposta, perché il punto di arrivo di un cammino si misura sempre rispetto al punto di partenza.
 
-**Orientamento**
+Prima di entrare nel silenzio, rispondi a te stesso con curiosità, non con severità. Cerca di vedere quello che c'è.
 
-Prima ancora di spiegare cosa faremo, si parte dall'esperienza. Non per valutarla — per vederla.
+**Dove preghi, di solito?** A casa, in chiesa, in macchina, nel tragitto a piedi? O non hai ancora un posto?
 
-Magari preghi da anni, magari hai ricominciato di recente, magari sei qui con molta incertezza su cosa sia davvero la preghiera. In ogni caso questa prima sessione è uguale per tutti: si prova, si guarda cosa succede, e si torna.
+**Quando preghi?** Al mattino, alla sera, nei ritagli casuali della giornata? O soltanto quando sei in difficoltà e non hai altro a cui appoggiarti?
 
-Paolo — che di preghiera ne sapeva — scrive che non sappiamo pregare come si deve. Non lo scrive come confessione di fallimento, ma come punto di partenza onesto. Da lì comincia qualcosa.
+**Per quanto tempo?** Cinque minuti, venti, meno di due?
 
----
+**Con quali parole?** Quelle imparate a memoria, quelle che escono spontaneamente, nessuna?
 
-**La pratica**
+**Cosa fai quando non sai cosa fare?** Aspetti, chiudi, cambi argomento, guardi il telefono?
 
-Siediti in un posto dove non sarai interrotto. Metti da parte il telefono.
+**C'è mai stato un momento in cui qualcosa ha funzionato davvero?** Anche uno solo, anche breve: un momento in cui sentivi di essere davvero lì.
 
-Prega per dieci minuti — come sai, come riesci, come fai di solito.
+Tieni con te questa fotografia della tua situazione attuale. Scrivi qualcosa se ti può servire a riordinare le idee. Tornerà utile alla fine del percorso, come punto di confronto.
 
-Poi, prima di andare avanti, fermati e rispondi a te stesso:
+Poi concediti qualche minuto in silenzio, pregando come sei abituato a fare.
 
-— Come hai riempito quel tempo?
-— Dove è andata la mente?
-— C'è stato un momento in cui sentivi di essere davvero *lì*?
-— Cosa hai fatto quando non sapevi cosa fare?
-
-Non è un esame. È una fotografia. Tienila con te — tornerà utile come punto di confronto alla fine del percorso.
-
-⏱ *10 minuti di preghiera + 5 di riflessione*
-
----
-
-**Chiusura**
-
-C'è stata una parola, un'immagine, un momento che ha funzionato — anche solo per qualche secondo?
+⏱ *10 minuti*
 
 ---
 ---
 
-## Sessione 2 — A pregare si impara
+## Sessione 2 — Una mappa e una guida
 
-**Soglia**
-*"Signore, insegnaci a pregare."* (Lc 11,1)
+Per molti cristiani la preghiera consiste nel recitare delle formule mettendoci attenzione e cuore. Per altri è un dialogo immediato nel quale si parla con Dio come si fa con le persone che incontriamo. Entrambe le modalità sono vere e buone per molti aspetti, ma non sono le uniche.
 
----
+La preghiera, infatti, ha una pluralità di espressioni e coinvolge tutte le dimensioni umane. Nasce da un desiderio spontaneo del cuore, ma ha bisogno di essere educata come tutte le realtà che ci riguardano.
 
-**Orientamento**
+Nel corso della storia cristiana sono state formulate molte vie per crescere nella capacità di pregare, anche se oggi tendiamo a dimenticarcele. Solitamente queste vie sono state chiamate "metodi di preghiera" e già questo modo di chiamarle suscita in molti contemporanei un istintivo sospetto. In realtà tutti, più o meno consapevolmente, abbiamo usato un metodo di preghiera, una routine che usiamo senza accorgercene (per questo ieri ti ho chiesto di far caso a come, dove, quanto e quando preghi). Alcuni santi ne hanno scritto a partire dalla loro esperienza, diventando guide autorevoli ai diversi cammini.
 
-C'è un'idea diffusa che blocca molti: che pregare sia qualcosa che si sa già fare, e che il problema sia solo trovare il tempo. Ma non è vero. Quando il tempo c'è, la maggior parte di noi non sa come riempirlo. Tranne quando si deve chiedere qualcosa.
+Non tutto è utile per noi. Quando leggiamo il diario o sentiamo il racconto di qualcuno che è stato in un luogo lontano o ha vissuto una esperienza che anche noi vorremmo vedere o provare, sappiamo che la nostra esperienza non sarà la stessa, i nostri passi seguiranno anche altri sentieri, ma ci è di enorme aiuto ascoltare la testimonianza di chi ci ha preceduto. Ci mette in guardia dai pericoli e ci anticipa le emozioni delle cose belle, ci evita di partire da capo e consente di andare un poco più avanti. Così chi ha sviluppato i metodi di preghiera ha cercato di raccontare quali sono gli atteggiamenti del cuore, i pensieri, le parole, le posizioni del corpo, gli ambienti che hanno favorito per lui un reale incontro con Dio.
 
-La preghiera ha certo una componente spontanea. Fa parte della natura umana il bisogno di comunicare con Dio. Ma il semplice impulso naturale non basta. Tutto ciò che è umano necessita di apprendimento, di trasmissione culturale, di rielaborazione intellettuale, di scelte consapevoli.
-
-I discepoli di Gesù — che lo vedevano pregare ogni giorno da vicino — a un certo punto gli fanno quella domanda. Non "quando pregare", non "perché pregare". *Come*. Avevano capito che c'era qualcosa da imparare. Anche con Gesù sotto gli occhi.
-
-Vale la pena stare in questa domanda senza fretta di risolverla. Il Catechismo lo dice con esattezza: *"La preghiera non si riduce allo spontaneo manifestarsi di un impulso interiore: per pregare, bisogna volerlo. Non basta neppure sapere quel che le Scritture rivelano sulla preghiera: è necessario anche imparare a pregare. È attraverso una trasmissione vivente che lo Spirito Santo insegna a pregare ai figli di Dio"* (CCC 2650). Papa Francesco lo aveva tradotto così: *"Tutti siamo capaci di preghiere episodiche, che nascono dall'emozione di un momento; ma Gesù ci educa a un altro tipo di preghiera: quella che conosce una disciplina, un esercizio, e viene assunta entro una regola di vita"* (Udienza generale, 4 novembre 2020).
-
----
-
-**La pratica**
-
-Prima di entrare nel silenzio, attiva la memoria.
-
-C'è un momento nella tua vita — recente o lontano, in chiesa o fuori, con parole o senza — in cui qualcosa che stavi vivendo ti sembrava vicino a una preghiera? Non cercare il momento perfetto. Cerca quello vero.
-
-Fermati su quel ricordo, e se arrivano lascia riemergere pensieri e sentimenti di allora. Resta dentro quel ricordo per qualche minuto senza fretta, senza sentire il bisogno di razionalizzare quel vissuto.
-
-Poi entra nel silenzio portando con te il versetto della soglia: *"Signore, insegnaci a pregare."* C'è già tutto, in quella domanda.
-
-⏱ *12 minuti*
-
----
-
-**Chiusura**
-
-C'è qualcosa in quel momento che vorresti imparare a ritrovare?
-
----
----
-
-## Sessione 3 — Amici che ci hanno preceduto
-
-**Soglia**
-*"Interroga i giorni antichi che furono prima di te."* (Dt 32,7)
-
----
-
-**Orientamento**
-
-I metodi di preghiera non sono teorie. Nascono dall'esperienza di qualcuno che pregava. Chi li ha sviluppati ha cercato di raccontare — con le parole che aveva — quali atteggiamenti del cuore, quali pensieri, quali gesti avevano favorito per lui o lei un incontro reale con Dio. Quando leggiamo il resoconto di qualcuno che ha già fatto quella strada, la nostra esperienza non sarà identica alla sua — i nostri passi seguiranno anche altri sentieri — ma ci è di grande aiuto: ci mette in guardia dai pericoli, ci anticipa le emozioni delle cose belle, ci evita di ripartire ogni volta da zero.
-
-In questo percorso tornerà spesso Pietro d'Alcantara, francescano spagnolo del Cinquecento, autore di un trattato sulla preghiera che ha guidato mistici del calibro di Teresa d'Avila. Non per il fascino del periodo storico — ma perché certe cose le ha dette con una precisione difficile da eguagliare. E con una franchezza che non riguarda solo il Cinquecento.
-
-Vale la pena conoscerlo subito attraverso le parole con cui introduce il suo stesso trattato:
+I metodi di preghiera servono ad imparare, a muovere i primi passi accompagnati da amici sicuri, ma vanno usati quando servono. Anzitutto perché ci sono giorni nei quali la preghiera è facile, spontanea, gustosa e non ha senso tentare di stare dentro uno schema. In secondo luogo i metodi servono ad introdurre al linguaggio della preghiera e devono essere abbandonati quando si trova il proprio linguaggio, il percorso che aiuta di più. Il santo cui guarderemo si chiama san Pietro d'Alcantara, un francescano spagnolo del XV secolo, e aveva le idee chiare in proposito:
 
 *"So bene che né tutte queste parti né quest'ordine sono sempre necessari; questo tuttavia servirà ai principianti perché abbiano un ordine e un filo conduttore che li possano dirigere all'inizio. Per questo voglio che di nessuna cosa che qui si possa dire si faccia legge perpetua né regola generale, perché il mio intento non è quello di dare una legge bensì un'introduzione per orientare i nuovi in questo cammino nel quale, una volta entrati, la pratica, l'esperienza e, molto di più, lo Spirito Santo insegneranno loro il resto."*
 
-Un uomo del Cinquecento che ti dice subito: non fare di questo una legge. E aggiunge che, sulla lunga distanza, non sarà lui ad insegnarti — sarà lo Spirito Santo. È un buon punto di partenza.
+Questo vogliamo fare: imparare, bene e precisamente, da un artigiano come si fanno le cose, per poi realizzarle con il nostro stile unico. Così nascono le opere d'arte.
 
----
+**Struttura del metodo di san Pietro d'Alcantara**
 
-**La pratica**
+Il materiale è organizzato in cinque tappe fondamentali, costruite su sette settimane:
 
-Leggi lentamente questo secondo testo di Pietro — scritto per chi comincia a pregare e non sa ancora come stare:
+**Entrare nella preghiera**: riscoprire l'importanza dei gesti, del silenzio, della preparazione.
 
-*"Non dobbiamo avere il cuore abbattuto e fiacco, bensì vivo, attento e proteso verso l'alto. Quando tuttavia è necessario impegnarsi con attenzione e raccoglimento del cuore, tanto d'altra parte bisogna che tale attenzione sia misurata e moderata. Ci sono alcuni, infatti, che si stancano la testa con l'eccessivo sforzo di concentrarsi in ciò che pensano. Ci sono altri, invece, che, per evitare questi inconvenienti, se ne stanno deboli, dimessi e pronti a farsi portar via da tutti i venti. Per evitare questi estremi, bisogna tenere la giusta misura — come siamo soliti dire a chi cavalca un cavallo difficile: si tratta di tenere le redini giuste, né tirate né lente. Dobbiamo fare in modo che la nostra attenzione sia moderata e non forzata, attenta e non angosciata dallo sforzo. In modo particolare, dobbiamo raccomandare di non stancare la testa con eccessiva attenzione all'inizio, perché, quando si fa questo, mancano le forze per andare avanti, come mancano al viandante che, all'inizio della giornata, cammini troppo in fretta."*
+**Leggere la Parola**: imparare l'arte dell'ascolto profondo.
 
-Tieni questa immagine con te — le redini giuste, né tirate né lente — ed entra nel silenzio. Quando senti di stringere troppo, lascia un po'. Quando senti di perderti, torna.
+**Meditare**: integrare intelletto, immaginazione e cuore.
 
-⏱ *12 minuti*
+**Rispondere**: con una vita riconoscente, nel dono di se stessi, aperti all'accoglienza di ogni necessità. Ognuno di questi passaggi occuperà una settimana.
 
----
+**Contemplare**: condotti dalla Parola al Silenzio.
 
-**Chiusura**
+Nelle intenzioni di san Pietro questo è lo schema di ogni tempo di preghiera e, quindi, ogni tappa non dovrebbe occupare che pochi minuti. Ma per aiutarti a capire ogni singolo passaggio ho scelto di farti fare esperienza di ciascun passaggio per un periodo prolungato. Le diverse sessioni delle settimane sottolineeranno ogni volta un aspetto in modo che tu faccia esperienza di diverse prospettive, cogliendo la ricchezza di ogni momento.
 
-C'è qualcuno — nella tua storia — che ti ha insegnato qualcosa sulla preghiera, anche senza saperlo?
+Un consiglio per la preghiera da san Pietro:
 
----
----
+*"Non dobbiamo avere il cuore abbattuto e fiacco, bensì vivo, attento e proteso verso l'alto. Quando tuttavia è necessario impegnarsi con attenzione e raccoglimento del cuore, tanto d'altra parte bisogna che tale attenzione sia misurata e moderata. Ci sono alcuni che si stancano la testa con l'eccessivo sforzo di concentrarsi in ciò che pensano. Ci sono altri, invece, che se ne stanno deboli, dimessi e pronti a farsi portar via da tutti i venti. Per evitare questi estremi, bisogna tenere la giusta misura, così da non stancare la testa con l'eccessiva attenzione e da non lasciar vagabondare il pensiero dove vuole per disattenzione e fiacchezza. Come siamo soliti dire a chi cavalca un cavallo difficile, si tratta di tenere le redini giuste, né tirate né lente. Dobbiamo fare in modo che la nostra attenzione sia moderata e non forzata, attenta e non angosciata dallo sforzo. In modo particolare, dobbiamo raccomandare di non stancare la testa con eccessiva attenzione all'inizio, perché quando si fa questo mancano le forze per andare avanti, come mancano al viandante che, all'inizio della giornata, cammini troppo in fretta."*
 
-## Sessione 4 — Una mappa per orientarsi
+Ora se hai ancora tempo prenditi qualche minuto di silenzio e prega come sei abituato/a.
 
-**Soglia**
-*"Cammineranno di forza in forza."* (Sal 84,8)
+Tieni le redini giuste, né tirate né lente.
 
----
-
-**Orientamento**
-
-Prima di vedere dove si andrà, vale la pena chiarire una cosa: la differenza tra tecnica e metodo.
-
-La tecnica è un procedimento che, fatto in quella sequenza con quegli strumenti, produce sempre quel risultato. Il metodo consegna strumenti fondamentali, suggerisce percorsi possibili, non garantisce niente — e resta aperto a mille varianti date dal contesto, dal momento, dalla persona. Usando una tecnica tutti ottengono lo stesso risultato; accogliendo un metodo ciascuno crea cose diverse, con un orientamento comune.
-
-Nella preghiera, ancor di più. Non si può decidere prima cosa succederà — si possono solo porre le condizioni perché possa succedere qualcosa. La preghiera vive di libertà e gratuità. Non si entra esigendo un risultato, non si strumentalizza Dio per obiettivi che si è già deciso di raggiungere — anche quando quegli obiettivi sembrano santi. Nella preghiera si è sempre discepoli che seguono il maestro, non che lo precedono.
-
-Pensala come un apprendistato in una bottega: all'inizio ti fidi, impari l'uso dei singoli attrezzi, stai dentro i canoni dell'arte che stai imparando. Piano piano diventi capace di scegliere gli attrezzi che ti sono utili. Essere artisti originali è il punto di arrivo, non quello di partenza.
-
-Il percorso è organizzato in sette settimane. Ogni settimana si ferma su una tappa in particolare, ma le tappe precedenti non vengono abbandonate: si portano con sé, si integrano. Come in un apprendistato si lavora su un gesto alla volta, ma il tutto è sempre presente.
-
-Le sette tappe:
-
-**Entrare nella preghiera.** I gesti, il silenzio, la preparazione. Non è qualcosa che si fa "prima" di pregare: è già preghiera, e da questo passaggio dipende molto di ciò che accadrà dopo.
-
-**Leggere.** La Parola di Dio non è un testo da analizzare. È una voce da ascoltare. Imparare a stare dentro un testo invece di starne fuori è già metà della strada.
-
-**Meditare.** Intelletto, immaginazione e cuore sullo stesso testo. Lo stesso brano, lavorato in modi diversi, dà frutti diversi.
-
-**Ringraziamento.** Cambiare prospettiva: costruire la vita spirituale su ciò che c'è, non su ciò che manca. È un allenamento degli occhi e del cuore.
-
-**Dono di sé.** Chi ama non si accontenta di fare regali. La forma più radicale della risposta — e quella più difficile da sostenere nel tempo.
-
-**Intercessione.** Il cuore che si è allargato abbastanza da contenere chi non è nella stanza. E persino chi non si riesce ad accogliere in nessun altro modo.
-
-**La parola nel silenzio.** Dove le parole cedono e rimane solo il desiderio. Questa tappa non si conquista — si riceve, se si arriva preparati.
-
----
-
-**La pratica**
-
-Rileggi le sette tappe. Ce n'è una che ti attira? Una che ti spaventa? Una che non capisci ancora?
-
-Fermati su quella. Poi entra nel silenzio portandoti quella sensazione — curiosità, incertezza, desiderio — senza cercare di risolverla.
-
-⏱ *12 minuti*
-
----
-
-**Chiusura**
-
-Quale tappa senti più lontana da te? Di solito è quella che ha più da dirti.
+⏱ *10 minuti*
 
 ---
 ---
 
-## Sessione 5 — Il mio passo d'inizio
+## Sessione 3 — Cosa voglio
 
-**Soglia**
-*"Àlzati, perché il cammino è ancora lungo per te."* (1Re 19,7)
+Hai guardato il tuo modo di pregare. Hai visto dove si andrà. Manca una cosa: il tuo desiderio personale.
 
----
+La domanda è semplice:
 
-**Orientamento**
+*Perché sono qui? Cosa spero succeda?*
 
-Hai guardato il tuo modo di pregare, hai capito che si impara, hai incontrato qualcuno che ha già fatto questa strada, hai visto dove si andrà. Manca una cosa: la tua intenzione personale.
+La prossima settimana ci fermeremo a riflettere su quali intenzioni animino il nostro pregare, ma è bene cominciare subito a chiederci cosa stiamo cercando non solo in questo percorso, ma, più radicalmente, nella nostra esperienza di preghiera e, in fondo, nella nostra esperienza cristiana.
 
-Non nel senso di un contratto con Dio — le promesse fatte sotto impulso durano poco. Ma nel senso di dire, anche solo a te stesso, perché sei qui. Cosa speri che cambi. Cosa sei disposto a mettere in gioco.
+Fai un segno della croce e un attimo di silenzio.
 
-Pietro d'Alcantara usa spesso una parola che non è né bravura né costanza: *disponibilità*. Essere disposti a fare la cosa anche quando non viene bene, anche quando sembra inutile, anche quando qualcos'altro sembra più urgente. È poco, come punto di partenza. Ma è preciso — e più onesto di qualsiasi promessa solenne.
+Leggi con calma il brano seguente: Gv 1,35-39
 
-Il versetto dell'angelo ad Elia nel deserto dice: alzati, perché il cammino è ancora lungo. Non: ce la puoi fare. Non: sei pronto. Solo: àlzati. L'angelo gli porta anche del pane — perché il cammino si fa con le forze che si hanno, non con quelle che si vorrebbe avere.
+*Giovanni stava ancora là con due dei suoi discepoli e, fissando lo sguardo su Gesù che passava, disse: "Ecco l'agnello di Dio!". E i suoi due discepoli, sentendolo parlare così, seguirono Gesù. Gesù allora si voltò e, osservando che essi lo seguivano, disse loro: "Che cosa cercate?". Gli risposero: "Rabbì, che, tradotto, significa Maestro, dove dimori?". Disse loro: "Venite e vedrete". Andarono dunque e videro dove egli dimorava e quel giorno rimasero con lui; erano circa le quattro del pomeriggio.*
 
----
+⏱ *10 minuti*
 
-**La pratica**
+A te, discepolo, il Signore chiede "Che cosa cerchi?". Lascia che la domanda risuoni in qualche attimo di silenzio e che emerga con calma la risposta.
 
-Prima di entrare nel silenzio, rispondi a te stesso — non ad alta voce, non per iscritto se non vuoi. Solo nella mente:
+Non cercare la risposta giusta. Cerca quella vera. Anche se non è quella che diresti in pubblico.
 
-*Perché sono qui?*
-*Cosa spero che cambi — in me, nel modo in cui preghi, nel modo in cui guardi la vita?*
-*Cosa sono disposto a mettere in gioco?*
+Non pensare in astratto: stai parlando con il Signore. Dialoga con lui. Ascolta il resto del dialogo con i discepoli: "dove dimori?"... "Venite e vedrete".
 
-Poi entra nel silenzio. La guida è una sola parola — sceglila tra quelle che hai incontrato in questi cinque giorni, o nel tuo vocabolario personale — e ripetila interiormente con dolcezza, senza fretta. È un piccolo assaggio di quello che imparerai nella settimana 7.
+Termina con un Padre nostro.
 
-⏱ *15 minuti*
+La settimana prossima comincia il percorso. Il primo passo è **Entrare nella preghiera**.
 
----
-
-**Chiusura**
-
-La settimana prossima comincia il percorso. Il primo passo è imparare a entrare — non ancora ad arrivare. Ma già lì c'è qualcosa da scoprire.
+Molto tempo viene perduto all'inizio della preghiera, quando la mente è ancora altrove. Esistono gesti, posture e piccoli riti di passaggio che aiutano a essere davvero presenti. Non è qualcosa che si fa "prima" di pregare: è già preghiera, e da questo passaggio dipende molto di ciò che accadrà dopo.
 
 ---
 
