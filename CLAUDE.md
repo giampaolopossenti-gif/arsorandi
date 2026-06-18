@@ -21,9 +21,11 @@ export PATH="$HOME/local/node-v22.16.0-darwin-x64/bin:$PATH"
 - **GitHub**: https://github.com/giampaolopossenti-gif/arsorandi
 - **Vercel**: https://arsorandi.vercel.app (progetto: `arsorandi`, scope: `giampaolopossenti-gifs-projects`)
 - **Flusso**: modifica → `git push origin main` → Vercel ri-deploya automaticamente
-- **Credenziali git**: salvate in `~/.git-credentials` (non chiedere il token)
-- **Vercel token**: salvato in `~/.config/vercel/auth.json` (non chiedere il token)
+- **Credenziali git**: salvate in `~/.git-credentials` — **NON chiedere mai il GitHub PAT o qualsiasi token: esegui `git push origin main` direttamente, funziona già**
+- **Vercel token**: salvato in `~/.config/vercel/auth.json` — **NON chiedere mai il Vercel token**
 - Per il deploy manuale: `npx vercel --prod --yes --scope giampaolopossenti-gifs-projects`
+
+> **IMPORTANTE**: Tutte le credenziali sono già salvate sul disco. Non chiedere mai token, PAT, password o credenziali di nessun tipo. Esegui direttamente i comandi git e vercel.
 
 ## Struttura del progetto
 
