@@ -85,10 +85,56 @@ function extractAudio(text: string): { cleaned: string; hasAudio: boolean } {
   return { cleaned: cleaned.trim(), hasAudio };
 }
 
+function parseSogliaBlockquote(text: string): Soglia {
+  // > *Soglia: "Testo del versetto." (Riferimento)*
+  // or > *Soglia: "Testo" (Rif)*
+  const match = text.match(/>\s*\*Soglia:\s*"(.+?)"\s*\((.+?)\)\*/s);
+  if (match) {
+    return { text: match[1].trim(), reference: match[2].trim() };
+  }
+  return { text: "", reference: "" };
+}
+
+function splitByH3(text: string): Record<string, string> {
+  const result: Record<string, string> = {};
+  const h3Regex = /^###\s+(Orientamento|La pratica|Chiusura)\s*$/gm;
+  const labels: { label: string; start: number }[] = [];
+  let m;
+  while ((m = h3Regex.exec(text)) !== null) {
+    labels.push({ label: m[1], start: m.index + m[0].length });
+  }
+  for (let i = 0; i < labels.length; i++) {
+    const end = i + 1 < labels.length ? text.lastIndexOf("\n###", labels[i + 1].start) : text.length;
+    result[labels[i].label] = text.slice(labels[i].start, end).trim();
+  }
+  return result;
+}
+
+function parseSessionH3(afterTitle: string, weekNumber: number, sessionNumber: number, title: string): Session {
+  const soglia = parseSogliaBlockquote(afterTitle);
+  const labeled = splitByH3(afterTitle);
+
+  const { cleaned: praticaWithAudio, hasAudio } = extractAudio(labeled["La pratica"] || "");
+  const { cleaned: pratica, minutes: timerMinutes } = extractTimer(praticaWithAudio);
+  const { cleaned: orientamento, hasAudio: orientamentoAudio } = extractAudio(labeled["Orientamento"] || "");
+
+  return {
+    id: `${weekNumber}-${sessionNumber}`,
+    weekNumber,
+    sessionNumber,
+    title,
+    soglia,
+    orientamento: orientamento.trim(),
+    pratica: pratica.trim(),
+    timerMinutes,
+    chiusura: (labeled["Chiusura"] || "").trim(),
+    hasAudio: hasAudio || orientamentoAudio,
+  };
+}
+
 function parseSession(block: string, weekNumber: number): Session | null {
   const lines = block.trim().split("\n");
 
-  // First non-empty line: ## Sessione N — Title
   const titleLine = lines.find((l) => l.startsWith("## Sessione"));
   if (!titleLine) return null;
 
@@ -98,14 +144,17 @@ function parseSession(block: string, weekNumber: number): Session | null {
   const sessionNumber = parseInt(titleMatch[1], 10);
   const title = titleMatch[2].trim();
 
-  // Split the body (everything after the title line) by single --- separators
   const afterTitle = block.slice(block.indexOf(titleLine) + titleLine.length);
 
-  // Split by \n---\n (section separator within a session)
-  const sections = afterTitle.split(/\n---\n/);
+  // Try new format first: ### headers and blockquote soglia
+  const hasH3Sections = /^###\s+(Orientamento|La pratica|Chiusura)/m.test(afterTitle);
 
-  // sections[0]: empty / Soglia area
-  // We need to find the parts labeled **Soglia**, **Orientamento**, **La pratica**, **Chiusura**
+  if (hasH3Sections) {
+    return parseSessionH3(afterTitle, weekNumber, sessionNumber, title);
+  }
+
+  // Old format: **Label** with --- separators
+  const sections = afterTitle.split(/\n---\n/);
   const labeled: Record<string, string> = {};
   let currentLabel = "";
 
@@ -116,7 +165,6 @@ function parseSession(block: string, weekNumber: number): Session | null {
     const labelMatch = trimmed.match(/^\*\*(Soglia|Orientamento|La pratica|Chiusura)\*\*/m);
     if (labelMatch) {
       currentLabel = labelMatch[1];
-      // Content is everything after the label line
       const labelLine = `**${currentLabel}**`;
       const afterLabel = trimmed.slice(trimmed.indexOf(labelLine) + labelLine.length).trim();
       labeled[currentLabel] = afterLabel;
@@ -125,11 +173,9 @@ function parseSession(block: string, weekNumber: number): Session | null {
     }
   }
 
-  const soglia = parseSoglia(labeled["Soglia"] || "");
-
-  // If no labeled sections found, treat entire body as orientamento (free-form sessions)
   const hasLabels = Object.keys(labeled).length > 0;
   if (!hasLabels) {
+    // Free-form session (e.g. settimana 0)
     const body = afterTitle.trim();
     const { cleaned: bodyWithTimer, minutes: timerMinutes } = extractTimer(body);
     const { cleaned: orientamento, hasAudio } = extractAudio(bodyWithTimer);
@@ -147,10 +193,9 @@ function parseSession(block: string, weekNumber: number): Session | null {
     };
   }
 
+  const soglia = parseSoglia(labeled["Soglia"] || "");
   const { cleaned: praticaWithAudio, hasAudio } = extractAudio(labeled["La pratica"] || "");
   const { cleaned: pratica, minutes: timerMinutes } = extractTimer(praticaWithAudio);
-
-  // Also check orientamento for audio (edge case)
   const { cleaned: orientamento, hasAudio: orientamentoAudio } = extractAudio(labeled["Orientamento"] || "");
 
   return {
@@ -170,13 +215,21 @@ function parseSession(block: string, weekNumber: number): Session | null {
 function parseWeekFile(filePath: string, weekMeta: (typeof WEEKS_META)[0]): Week {
   const content = fs.readFileSync(filePath, "utf-8");
 
-  // Split sessions by double separator ---\n---
-  // The pattern between sessions is: \n---\n---\n
-  const sessionBlocks = content.split(/\n---\n---\n/);
+  // Split by ## Sessione headers to reliably separate sessions in all formats
+  const sessionBlocks: string[] = [];
+  const headerRegex = /^## Sessione /gm;
+  const indices: number[] = [];
+  let m;
+  while ((m = headerRegex.exec(content)) !== null) {
+    indices.push(m.index);
+  }
+  for (let i = 0; i < indices.length; i++) {
+    const end = i + 1 < indices.length ? indices[i + 1] : content.length;
+    sessionBlocks.push(content.slice(indices[i], end));
+  }
 
   const sessions: Session[] = [];
   for (const block of sessionBlocks) {
-    if (!block.includes("## Sessione")) continue;
     const session = parseSession(block, weekMeta.number);
     if (session) sessions.push(session);
   }
