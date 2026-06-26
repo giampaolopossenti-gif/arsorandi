@@ -97,11 +97,12 @@ function parseSogliaBlockquote(text: string): Soglia {
 
 function splitByH3(text: string): Record<string, string> {
   const result: Record<string, string> = {};
-  const h3Regex = /^###\s+(Orientamento|La pratica|Chiusura)\s*$/gm;
+  const h3Regex = /^###\s+(Orientamento|(?:La )?[Pp]ratica|Chiusura)\s*$/gm;
   const labels: { label: string; start: number }[] = [];
   let m;
   while ((m = h3Regex.exec(text)) !== null) {
-    labels.push({ label: m[1], start: m.index + m[0].length });
+    const label = m[1].match(/pratica/i) ? "La pratica" : m[1];
+    labels.push({ label, start: m.index + m[0].length });
   }
   for (let i = 0; i < labels.length; i++) {
     const end = i + 1 < labels.length ? text.lastIndexOf("\n###", labels[i + 1].start) : text.length;
