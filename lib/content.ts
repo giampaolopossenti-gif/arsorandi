@@ -154,24 +154,19 @@ function parseSession(block: string, weekNumber: number): Session | null {
     return parseSessionH3(afterTitle, weekNumber, sessionNumber, title);
   }
 
-  // Old format: **Label** with --- separators
-  const sections = afterTitle.split(/\n---\n/);
+  // Old format: **Label** markers (with or without --- separators)
+  const boldRegex = /^\*\*(Soglia|Orientamento|(?:La )?[Pp]ratica|Chiusura)\*\*\s*$/gm;
   const labeled: Record<string, string> = {};
-  let currentLabel = "";
-
-  for (const section of sections) {
-    const trimmed = section.trim();
-    if (!trimmed) continue;
-
-    const labelMatch = trimmed.match(/^\*\*(Soglia|Orientamento|(?:La )?[Pp]ratica|Chiusura)\*\*/m);
-    if (labelMatch) {
-      currentLabel = labelMatch[1].match(/pratica/i) ? "La pratica" : labelMatch[1];
-      const labelLine = `**${labelMatch[1]}**`;
-      const afterLabel = trimmed.slice(trimmed.indexOf(labelLine) + labelLine.length).trim();
-      labeled[currentLabel] = afterLabel;
-    } else if (currentLabel) {
-      labeled[currentLabel] = (labeled[currentLabel] || "") + "\n\n" + trimmed;
-    }
+  const boldLabels: { label: string; contentStart: number; matchStart: number }[] = [];
+  let bm;
+  while ((bm = boldRegex.exec(afterTitle)) !== null) {
+    const label = bm[1].match(/pratica/i) ? "La pratica" : bm[1];
+    boldLabels.push({ label, contentStart: bm.index + bm[0].length, matchStart: bm.index });
+  }
+  for (let i = 0; i < boldLabels.length; i++) {
+    const end = i + 1 < boldLabels.length ? boldLabels[i + 1].matchStart : afterTitle.length;
+    const raw = afterTitle.slice(boldLabels[i].contentStart, end).trim();
+    labeled[boldLabels[i].label] = raw.replace(/^---/, "").replace(/---$/, "").trim();
   }
 
   const hasLabels = Object.keys(labeled).length > 0;
