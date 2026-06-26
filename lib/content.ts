@@ -163,10 +163,10 @@ function parseSession(block: string, weekNumber: number): Session | null {
     const trimmed = section.trim();
     if (!trimmed) continue;
 
-    const labelMatch = trimmed.match(/^\*\*(Soglia|Orientamento|La pratica|Chiusura)\*\*/m);
+    const labelMatch = trimmed.match(/^\*\*(Soglia|Orientamento|(?:La )?[Pp]ratica|Chiusura)\*\*/m);
     if (labelMatch) {
-      currentLabel = labelMatch[1];
-      const labelLine = `**${currentLabel}**`;
+      currentLabel = labelMatch[1].match(/pratica/i) ? "La pratica" : labelMatch[1];
+      const labelLine = `**${labelMatch[1]}**`;
       const afterLabel = trimmed.slice(trimmed.indexOf(labelLine) + labelLine.length).trim();
       labeled[currentLabel] = afterLabel;
     } else if (currentLabel) {
