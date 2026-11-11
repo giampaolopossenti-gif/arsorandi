@@ -20,6 +20,16 @@ export default function HomePage() {
       {/* Riprendi / prossima sessione — client component */}
       <HomeResume weeks={weeks} />
 
+      {weeks.some((w) => w.underConstruction) && (
+        <p className="font-sans text-sm leading-relaxed mb-6" style={{ color: "var(--text-muted)" }}>
+          Le settimane 5 e 6 sono in revisione. Puoi già leggere e sperimentare la{" "}
+          <Link href="/settimana/7" className="underline" style={{ color: "var(--accent)" }}>
+            settimana 7
+          </Link>
+          , già rivista, anche prima di quelle.
+        </p>
+      )}
+
       <div className="flex flex-col gap-3">
         {weeks.map((week) => (
           <Link
@@ -38,7 +48,13 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="flex items-center gap-2 shrink-0 pt-1">
-                <WeekProgress weekNumber={week.number} total={week.sessions.length} />
+                {week.underConstruction ? (
+                  <span className="font-sans text-xs" style={{ color: "var(--text-muted)" }}>
+                    In costruzione
+                  </span>
+                ) : (
+                  <WeekProgress weekNumber={week.number} total={week.sessions.length} />
+                )}
                 <svg
                   width="14" height="14" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" strokeWidth={2}

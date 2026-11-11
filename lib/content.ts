@@ -24,6 +24,7 @@ export interface Week {
   title: string;
   theme: string;
   sessions: Session[];
+  underConstruction?: boolean;
 }
 
 export interface CourseProgress {
@@ -41,6 +42,10 @@ const WEEKS_META = [
   { number: 6, title: "Intercessione", theme: "Intercessione" },
   { number: 7, title: "La parola nel silenzio", theme: "Contemplazione" },
 ];
+
+// Settimane in revisione: testi rimossi, mostrate come "in costruzione".
+// I testi precedenti restano nella cronologia git.
+const UNDER_CONSTRUCTION_WEEKS = [5, 6];
 
 const CONTENT_DIR = path.join(process.cwd(), "content");
 
@@ -244,6 +249,9 @@ export function getAllWeeks(): Week[] {
   if (_cache) return _cache;
 
   _cache = WEEKS_META.map((meta, i) => {
+    if (UNDER_CONSTRUCTION_WEEKS.includes(meta.number)) {
+      return { ...meta, sessions: [], underConstruction: true };
+    }
     const filePath = path.join(CONTENT_DIR, WEEK_FILES[i]);
     return parseWeekFile(filePath, meta);
   });

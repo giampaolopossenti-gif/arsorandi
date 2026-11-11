@@ -37,7 +37,7 @@ export default function PercorsoMap({ weeks }: { weeks: Week[] }) {
                   {week.number === 0 ? "Introduzione" : `Settimana ${week.number}`} — {week.title}
                 </div>
                 <div className="font-sans text-xs" style={{ color: "var(--text-muted)" }}>
-                  {weekCompleted}/{week.sessions.length}
+                  {week.underConstruction ? "In costruzione" : `${weekCompleted}/${week.sessions.length}`}
                 </div>
               </div>
 

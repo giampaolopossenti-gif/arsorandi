@@ -31,6 +31,27 @@ export default function WeekPage({ params }: { params: { week: string } }) {
         </h1>
       </div>
 
+      {week.underConstruction && (
+        <div
+          className="rounded-xl border p-5 font-sans text-sm leading-relaxed"
+          style={{ backgroundColor: "var(--bg-surface)", borderColor: "var(--border)", color: "var(--text-muted)" }}
+        >
+          <p className="font-serif text-base font-medium mb-2" style={{ color: "var(--text)" }}>
+            Pagina in costruzione
+          </p>
+          <p className="mb-3">
+            Questa settimana è in fase di revisione e sarà disponibile presto.
+          </p>
+          <p>
+            Nel frattempo puoi già leggere e sperimentare la{" "}
+            <Link href="/settimana/7" className="underline" style={{ color: "var(--accent)" }}>
+              Settimana 7 — La parola nel silenzio
+            </Link>
+            , già rivista: si può affrontare anche prima delle settimane 5 e 6.
+          </p>
+        </div>
+      )}
+
       <div className="flex flex-col gap-3">
         {week.sessions.map((session) => (
           <Link
